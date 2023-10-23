@@ -11,7 +11,11 @@ import (
 )
 
 func (app *application) healthcheckHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "status: available")
-	fmt.Fprintf(w, "environment: %s\n", app.config.env)
-	fmt.Fprintf(w, "version: %s\n", version)
+	js := `{"status": "available", "environment": %q, "version": %q}`
+	js = fmt.Sprintf(js, app.config.env, version)
+
+	// Set the "Content-Type: application/json"
+	w.Header().Set("Content-Type", "application/json")
+	// Write the Json as the Http response body.
+	w.Write([]byte(js))
 }
