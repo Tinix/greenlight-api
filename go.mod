@@ -1,4 +1,4 @@
-module github.com/tinix/greenlight
+module github.com/tinix/greenlight-api
 
 go 1.19
 

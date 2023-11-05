@@ -1,7 +1,9 @@
+//
 // healthcheck.go
 // Copyright (C) 2023 tinix <tinix@debian>
 //
 // Distributed under terms of the MIT license.
+//
 
 package main
 
