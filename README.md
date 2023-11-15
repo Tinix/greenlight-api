@@ -1,5 +1,5 @@
 <a id="readme-top"></a>
-<img src=".github/img/api_go.png" alt="Rails Header">
+<img src=".github/img/api_go.png" alt="Go Api Header">
 
 
 <h3 align="center"><h3 align="center">Welcome to GreenLight Api</h3>
